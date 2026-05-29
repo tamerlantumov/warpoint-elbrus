@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — WARPOINT ARENA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="logo">WAR<span>POINT</span></a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="games.html">Игры</a></li>
+        <li><a href="pricing.html">Цены</a></li>
+        <li><a href="contacts.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <h1>Свяжись с нами</h1>
+  <p>Забронируй арену или задай вопрос — ответим в течение 15 минут</p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Наши <span class="neon-text">координаты</span></h2>
+        <p><strong>Адрес</strong>ул. Ахохова, 102, г.Нальчик</p>
+        <p><strong>Телефон</strong>+7 (495) 123-45-67</p>
+        <p><strong>Email</strong>info@warpoint-arena.ru</p>
+        <p><strong>Часы работы</strong>Ежедневно: 10:00 — 22:00</p>
+        <div class="socials" style="justify-content:flex-start; margin-top:2rem;">
+          <a href="#">VK</a><a href="#">TG</a><a href="#">INST</a>
+        </div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Сообщение отправлено! Мы свяжемся с вами в течение 15 минут.'); this.reset();">
+        <h2>Форма <span class="neon-pink">брони</span></h2>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Желаемая дата">
+        <textarea placeholder="Количество игроков, пожелания..." required></textarea>
+        <button type="submit" class="btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo">WAR<span>POINT</span> ARENA</a>
+  <div class="socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">INST</a>
+  </div>
+  <p class="copyright">© 2026 WARPOINT ARENA. Все права защищены.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
